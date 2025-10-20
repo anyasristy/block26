@@ -1,9 +1,60 @@
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+button{
+  padding: 0.25rem;
+  background: white;
+}
+button:hover{
+  cursor: pointer;
+  background:white;
+}
+#root{
+  max-width: 20rem;
+  padding: 1rem;
+  margin:0;
+  text-align:center;
+}
+.welcomepagepage{
+  display: grid;
+  gap: 1ch;
+  width: 30ch;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.scoreboard,
+.scoreboard button {
+  font-family: 'Times New Roman', Times, serif;
+}
+.scoreboard {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 1rem;
+  gap: 1rem;
+}
+.scoreboard>*{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: black;
+}
+.Field{
+  display: grid;
+  grid-template-columns: 2fr;
+  grid-auto-rows: 10rem;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+}
 .hole {
   background: url("/hole.png") no-repeat center/contain;
 }
-
 .mole {
   background-image: url("/mole.png");
 }
-
+.mole:hover {
+  cursor: pointer;
+}

@@ -1,6 +1,6 @@
 # Whack a Mole
 
-![A mole sits in a field of holes. The current score is 8.](example.png)
+![A mole sits in a Field of holes. The current score is 8.](example.png)
 
 Whack a Mole is a classic arcade game that consists of a cabinet with a play area and a
 large mallet. Points are scored by whacking each mole as it appears. You will be making a

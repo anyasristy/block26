@@ -1,17 +1,18 @@
-import {useGame} from "./GameContext";
+import {useGame} from "./gamecontext";
 import Field from "./Field";
-import Scoreboard from "./Scoreboard";
-import Welcome from "./Welcome";
+import scoreboard from "./scoreboard";
+import welcomepage from "./welcomepage";
 export default function App() {
   const { playing } = useGame();
   return (
     <><h1>Whack a Mole Game</h1>
-      {playing?(<>
-          <Scoreboard/>
-          <Field/>
+      {playing?(
+        <>
+          <scoreboard />
+          <Field />
         </>
       ):(
-        <Welcome/>
+        <welcomepage />
       )}</>
   );
 }
